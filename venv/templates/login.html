@@ -1,0 +1,26 @@
+{% extends 'layout/layout.html' %}
+{% block content %}
+    <div class="container  text-center">
+        <div class="row">
+            <div class="col-6 offset-md-3 bg-info" style="background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);"class="col-6  offset-md-3 p-4 shadow-lg p-3  bg-transparent info body rounded">
+                <h1 class="text-center mt-3">Login</h1>
+                <form action="/login" method="POST" class="mt-5">
+                    <div class="mb-3 row">
+                        <label for="username" class="col-sm-3 col-form-label">Username</label>
+                        <div class="col-sm-8">
+                        <input type="text" class="form-control" id="username" name="username">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="password" class="col-sm-3 col-form-label">Password</label>
+                        <div class="col-sm-8">
+                        <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mb-3" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
